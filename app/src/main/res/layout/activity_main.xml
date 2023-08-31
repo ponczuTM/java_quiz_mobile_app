@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal"
+        android:text="Zgadnij,\njaki to język programowania?"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:id="@+id/ivShowImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="answerSelected" />
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="answerSelected" />
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="answerSelected" />
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="answerSelected" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Punty: "
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/tvPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 na 8 możliwych"
+            android:textSize="32sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivMedals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/rewardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wybierz nagrodę"
+            android:textSize="24sp"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/btnBluetoothChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Czat Bluetooth"
+            android:onClick="onClickReward" />
+
+        <Button
+            android:id="@+id/btnFlyingBall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latające kulki"
+            android:onClick="onClickReward" />
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zobacz reakcję"
+            android:onClick="onClickReward" />
+
+        <Button
+            android:id="@+id/btnGenerateNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pokaż powiadomienia"
+            android:onClick="onClickReward" />
+
+
+        <Button
+            android:id="@+id/btnSuprise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NIESPODZIANKA"
+            android:onClick="onClickReward" />
+
+    </LinearLayout>
+
+</LinearLayout>
